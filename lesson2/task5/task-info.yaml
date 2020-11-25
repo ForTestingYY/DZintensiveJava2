@@ -1,0 +1,88 @@
+type: edu
+files:
+- name: src/Task.java
+  visible: true
+  placeholders:
+  - offset: 139
+    length: 10
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 73
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+    encrypted_possible_answer: int matrix[][] = new int[4][4]
+  - offset: 1290
+    length: 3
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 158
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+    encrypted_possible_answer: int
+  - offset: 1303
+    length: 15
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 178
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+    encrypted_possible_answer: int[][] matrix
+  - offset: 1547
+    length: 11
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 197
+    initialized_from_dependency: false
+    selected: true
+    status: Failed
+    encrypted_possible_answer: |2-
+         int maxValue = matrix[0][0];
+              for (int i = 0; i < matrix.length; i++) {
+                  for (int j = 0; j < matrix[i].length; j++) {
+                      if (matrix[i][j] > maxValue){
+                          maxValue = matrix[i][j];
+                      }
+                  }
+              }
+              return maxValue;
+  text: |-
+    public class Task {
+        public static void main(String[] args) {
+            /* TODO */;
+            System.out.println(maxValue(matrix));
+
+
+        }
+
+        public static /* TODO */ maxValue(/* TODO */) {
+         /* TODO */
+        }
+    }
+  learner_created: false
+- name: test/Tests.java
+  visible: false
+  text: |-
+    import org.junit.Assert;
+    import org.junit.Test;
+
+    public class Tests {
+      @Test
+      public void testSolution() {
+
+        int [][] matrix = {{10,1,5,16},{17, 8, 18, 9},{3, 5,6,19},{3,42, 17}};
+        Assert.assertEquals(Task.maxValue(matrix), 42);
+      }
+    }
+  learner_created: false
+status: Failed
+feedback:
+  message: 3
+  time: Wed, 25 Nov 2020 13:08:58 UTC
+record: -1

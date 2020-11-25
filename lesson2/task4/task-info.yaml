@@ -1,0 +1,89 @@
+type: edu
+files:
+- name: src/Task.java
+  visible: true
+  placeholders:
+  - offset: 272
+    length: 474
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 72
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: ' int[][] matrix = new int[3][3];'
+  - offset: 803
+    length: 18
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 149
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: int
+  - offset: 825
+    length: 13
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 164
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: int[][] matrix
+  - offset: 907
+    length: 10
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 178
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |2-
+              int s = 0;
+              for (int i = 0; i < matrix.length; ++i) {
+                  for (int j = 0; j < matrix[i].length; ++j) {
+                      if (i == j) {
+                          s += matrix[i][j];
+                      }
+                  }
+              }
+              return s;
+  text: |-
+    public class Task {
+        public static void main(String[] args) {
+           /* TODO */
+            System.out.println(sum(matrix));
+        }
+
+        public static /* TODO */ sum(/* TODO */) {
+    /* TODO */
+        }
+    }
+  learner_created: false
+- name: test/Tests.java
+  visible: false
+  text: |-
+    import org.junit.Assert;
+    import org.junit.Test;
+
+    public class Tests {
+      @Test
+      public void testSolution() {
+
+        int [][] matrix = {{1,2,3},
+                           {4,5,6},
+                           {7,8,9}};
+
+        Assert.assertEquals(15, Task.sum(matrix));
+      }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 24 Nov 2020 15:55:38 UTC
+record: -1

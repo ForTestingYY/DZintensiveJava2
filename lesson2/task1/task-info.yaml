@@ -1,0 +1,42 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Полиморфизм
+  is_correct: false
+- text: Композиция
+  is_correct: true
+- text: Агрегация
+  is_correct: true
+- text: Ассоциация
+  is_correct: true
+- text: Инкапсуляция
+  is_correct: false
+- text: Наследование
+  is_correct: true
+- text: Транзитивность
+  is_correct: false
+- text: Реализация
+  is_correct: true
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // Write your solution here
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 24 Nov 2020 14:55:40 UTC
+record: -1
+selected_options:
+- 1
+- 2
+- 3
+- 5
+- 7
